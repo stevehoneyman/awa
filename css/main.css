@@ -14,7 +14,6 @@ header {
   position: relative;
   width: inherit;
   height: inherit;
-  padding: 3rem 0 0 4rem;
   display: flex;
   flex-direction: column;
   background-image: url('../images/chariot-overlay.jpg');
@@ -30,15 +29,16 @@ header {
 .site-logo {
   width: 204px;
   height: 117px;
-  margin-bottom: 190px;
+  margin: 3rem 0 190px 4rem;
 }
 
 .product-logo {
-  margin-bottom: 100px;
+  margin: 0 0 100px 4rem;
 }
 
 .strap {
   max-width: 40%;
+  margin: 0 0 0 5rem;
 }
 
 h1 {
@@ -67,7 +67,7 @@ p {
 }
 
 .animate-scale {
-  animation: scale 1s;
+  animation: scale 5s;
   animation-timing-function: ease-out;
 }
 
