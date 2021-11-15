@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta = charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Ken Burns test</title>
+
+  <link href="base.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+
+  <style>
+
+    #site-wrapper {
+      width: 100%;
+      max-width: 1200px;
+      height: auto;
+      margin: 0 auto;
+    }
+
+    .mask {
+      width: 100%;
+      height: 675px;
+      overflow: hidden;
+    }
+
+    header {
+      width: inherit;
+      height: inherit;
+      display: flex;
+      align-items: flex-end;
+      background-image: url('images/chariot.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    h1 {
+      padding: 1rem 11rem 5rem 3rem;
+      margin: 0 0 10% 5%;
+      font-family: 'poppins', sans-serif;
+      font-size: 5rem;
+      text-transform: uppercase;
+      letter-spacing: 15px;
+      color: red;
+      /* animation: image-text 5s; */
+    }
+
+    /* scale
+    ------------------------------------------------------------------------- */
+    @keyframes image-scale {
+      0%    {
+        /* filter: blur(10px); */
+        transform: scale(245%) translate(0, 0%);
+      }
+
+      65%  {
+        /* filter: blur(0px); */
+        transform: scale(250%) translate(-5%, 5%);
+      }
+
+
+      100%  {
+        /* filter: blur(0px); */
+        transform: scale(100%) translate(0%, 0%);
+      }
+    }
+
+    .scale {
+      animation: image-scale 5s;
+      animation-timing-function: ease-in;
+    }
+
+    /* text
+    ------------------------------------------------------------------------- */
+    @keyframes image-text {
+      0%    {
+        opacity: 0;
+        letter-spacing: normal;
+      }
+
+      100%  {
+        opacity: 1;
+        letter-spacing: 15px;
+      }
+    }
+
+  </style>
+
+</head>
+
+  <body>
+    <div id="site-wrapper">
+      <div class="mask">
+        <header class="scale">
+          <!-- <h1 class="text">Chariot</h1> -->
+        </header>
+      </div>
+
+    </div>
+  </body>
+
+</html>
