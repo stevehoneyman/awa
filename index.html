@@ -4,86 +4,25 @@
   <meta = charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Ken Burns test</title>
+  <title>AWA Scale / KB effect</title>
 
   <link href="css/reset.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
 
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
-
-  <style>
-
-    #site-wrapper {
-      width: 100%;
-      max-width: 1680px;
-      height: auto;
-      margin: 0 auto;
-    }
-
-    .mask {
-      width: 100%;
-      height: 945px;
-      overflow: hidden;
-    }
-
-    header {
-      width: inherit;
-      height: inherit;
-      display: flex;
-      align-items: flex-end;
-      background-image: url('images/chariot.jpg');
-      background-position: center;
-      background-repeat: no-repeat;
-    }
-
-    h1 {
-      padding: 1rem 11rem 5rem 3rem;
-      margin: 0 0 10% 5%;
-      font-family: 'poppins', sans-serif;
-      font-size: 5rem;
-      text-transform: uppercase;
-      /* letter-spacing: 15px; */
-    }
-
-    /* scale
-    ------------------------------------------------------------------------- */
-    @keyframes image-scale {
-      0%    {
-        transform: scale(125%);
-      }
-
-      100%  {
-        transform: scale(100%);
-      }
-    }
-
-    .scale {
-      animation: image-scale 7.5s;
-      animation-timing-function: ease-out;
-    }
-
-    /* text
-    ------------------------------------------------------------------------- */
-    @keyframes image-text {
-      0%    {
-        opacity: 0;
-        letter-spacing: normal;
-      }
-
-      100%  {
-        opacity: 1;
-      }
-    }
-
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
 
 </head>
 
   <body>
     <div id="site-wrapper">
       <div class="mask">
-        <header class="scale">
-          <!-- <h1 class="text">Chariot</h1> -->
+        <header class="animate-scale">
+          <img src="images/awa-logo.png" class="site-logo">
+          <img src="images/chariot-title-logo.png" class="product-logo fade">
+          <div class="strap">
+            <h1 class="animate-heading">Lorem ipsum dolor siamet, consectetur adipiscing.</h1>
+            <p class="animate-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sit amet odio est. Pallentesque bibendum turpis ut auctor sollicitudin. In vestibulum eros molestie.</p>
+          </div>
         </header>
       </div>
     </div>

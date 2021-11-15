@@ -23,15 +23,12 @@ summary {
 }
 
 body {
-  font-family: sans-serif;
+  font-family: 'poppins', sans-serif;
+  color: #fff;
 }
 
 img {
   display: block;
   max-width: 100%;
   height: auto;
-}
-
-ul, li {
-  list-style: none;
 }
